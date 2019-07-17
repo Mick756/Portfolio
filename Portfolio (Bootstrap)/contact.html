@@ -4,11 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Your Name</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+    <a class="navbar-brand" id="navBarIcon" href="#">Contact</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav" id="navBarLinks">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="textBox">
+      <h2>Contact Me</h2>
+      <hr>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-info">Sumbit</button>
+    </div>
+  </div>
 </body>
 
 </html>
