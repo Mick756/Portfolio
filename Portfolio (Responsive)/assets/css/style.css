@@ -12,13 +12,6 @@ body {
 
 /* general */
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-}
-
 h1,
 h2,
 h3,
@@ -77,10 +70,7 @@ h3 {
   background: #4aaaa5;
 }
 
-nav {
-  float: right;
-  margin-top: 25px;
-}
+
 
 nav a {
   display: inline-block;
@@ -214,4 +204,75 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    max-width: 620px;
+    margin: 0;
+    clear: both;
+  }
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  nav a {
+    margin-right: 65px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  .auth-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 748px;
+    margin: 0;
+    clear: both;
+  }
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  nav a {
+    float: relative;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  .auth-image {
+    float: left;
+    width: 75%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0;
+    clear: both;
+  }
+  nav a {
+    float: relative;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
 }
